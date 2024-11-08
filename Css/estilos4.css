@@ -1,0 +1,142 @@
+ul {
+    position: sticky;
+    /* position: -webkit-sticky; */
+    top: 0;
+
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(192, 22, 22, 0.74);
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+@keyframes mover {
+    from {
+        color: red;
+        margin-left: 0px;
+    }
+
+    to {
+        color: rgb(90, 5, 5);
+        margin-left: 200px;
+    }
+}
+@keyframes mover2 {
+    0% {
+        color: rgb(205, 67, 67);
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    50% {
+        color: rgb(200, 197, 9);
+        margin-left: 300px;
+        margin-top: 50px;
+        border: 2px dashed purple;
+    }
+
+    100% {
+        color: rgb(84, 6, 6);
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+/* .f4 {
+    width: 200px;
+    color: rgb(216, 66, 66);
+    animation-name: mover2;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+} */
+@keyframes animacion2{
+    0%{
+        margin-left : 0px;
+        margin-top:0px;
+    }
+    25%{
+        margin-left:0px;
+        margin-top: 100px;
+    }
+    50%{
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    75%{
+        margin-left: 100px;
+        margin-top: 0px;
+    }
+    100%{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+#titulo{
+    animation-name: animacion2;
+    animation-duration: 4s;
+}
+@keyframes desvanecer{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#logo{
+    animation-name: desvanecer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.titulo2{
+    background-color: aqua;
+    color: red;
+    width: 300px;
+    border : 2px dashed purple;
+    font-size: 40px;
+    transition: font-size 2s;
+    transition-timing-function: ease;
+    text-shadow: 2px 2px black;
+}
+.titulo2:hover{
+    font-size: 100px;
+    color:blue;
+}
+.description::selection{
+    background: yellow;
+    color: red;
+}
+.description:hover{
+    opacity: 0.6;
+}
+.subtitle {
+    color: #800080; /* Color de subtítulos */
+}
+.description {
+    color: rgb(37, 177, 130); /* Color de la descripción */
+}
+.activa{
+    background-color: rgb(217, 217, 25);
+    color: white;
+}
+#logo2{
+    width: 100px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition : width 0.5s;
+}
+#logo2:hover{
+    opacity: 0.5;
+    width: 200px;
+}

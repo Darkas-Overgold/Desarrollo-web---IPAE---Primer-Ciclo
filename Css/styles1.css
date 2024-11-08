@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header */
+.header {
+    background-color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+}
+/* Banner */
+.banner {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.navbar a {
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #d0d0d0;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navbar a:hover {
+    background-color: #ddd;
+}
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Asegura que las tarjetas se envuelvan si hay demasiadas para caber en una línea */
+}
+/* Course Card */
+.course-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(50% - 20px); /* Ajusta el ancho */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+.course-card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Ajusta el tamaño de la imagen */
+}
+.course-card h3 {
+    color: blue;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.course-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+.course-card .price {
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+}
+.course-card a {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Course Details */
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.course-details span {
+    display: block;
+    margin: 5px 0;
+}
+/* Buy Button */
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    color: white;
+}
+.buy-button:hover {
+    background-color: #e0e0e0;
+}
+/* Modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-button:hover {
+    background-color: darkblue;
+}
+/* Content Layout */
+.content {
+    display: flex;
+    margin: 20px;
+}
+.categories {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+.categories h3 {
+    margin-top: 0;
+    font-weight: bold;
+}
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+.categories li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.categories input[type="checkbox"] {
+    margin-bottom: 10px; /* Añadido margen inferior */
+    margin-right: 10px; /* Añadido margen derecho */
+}
+.courses {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}

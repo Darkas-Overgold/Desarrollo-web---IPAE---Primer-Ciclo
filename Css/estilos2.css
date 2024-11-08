@@ -1,0 +1,74 @@
+ul{
+    position: absolute;
+    list-style: none;
+    background-color: gainsboro;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    padding-left: 200px;
+}
+li a{
+    display: block;
+    color: rgb(3, 3, 19);
+    padding: 8px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: blue;
+    color: white;
+}
+.activa{
+    background-color: rgb(217, 217, 25);
+    color: white;
+}
+.title {
+    color: #d80000; /* Color del título principal */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.subtitle {
+    color: #800080; /* Color de subtítulos */
+}
+.subtitle::first-letter{
+    background-color: rgb(37, 177, 130);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    border: 2px solid purple;
+    border-radius: 8px;
+    text-shadow: 2px 2px black;
+}
+.description {
+    color: rgb(37, 177, 130); /* Color de la descripción */
+}
+.description::first-line{
+    background-color: purple;
+    color: white;
+    font-size: 40px;
+    font-style: oblique;
+    border: 2px solid rgb(37, 177, 130);
+    border-radius: 8px;
+    text-shadow: 4px 4px black;
+}
+.description::selection{
+    background: yellow;
+    color: red;
+}
+.description:hover{
+    opacity: 0.6;
+}
+.logo:hover{
+    opacity: 0.5;
+}
+p::after{
+    content: "Zegel®";
+}
+p::before{
+    content: "🥵" ;
+}

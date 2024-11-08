@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas de especialización virtual</title>
+    <link rel="stylesheet" href="/Css/styles1.css"> <!-- Vincular el archivo CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #f3f3f3;
+            padding: 10px;
+            text-align: center;
+        }
+        .banner {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar a {
+            padding: 10px;
+            margin: 0 5px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid #d0d0d0;
+            background-color: blue;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Asegura que las tarjetas se envuelvan si hay demasiadas para caber en una línea */
+        }
+        .course-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 30%;
+            text-align: center;
+            margin: 10px;
+        }
+        .course-card img {
+            width: 100%;
+            height: auto;
+        }
+        .course-card h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .course-card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .course-card .price {
+            font-size: 1.1em;
+            color: #000;
+            font-weight: bold;
+        }
+        .course-card a {
+            display: block;
+            margin-top: 10px;
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .course-details span {
+            display: block;
+            margin: 5px 0;
+        }
+        .buy-button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        ¡Por tiempo limitado! Nuevos cursos virtuales a S/.79 c/u. Usa el código CURSO79 2d : 02h : 41m : 22s Ver Ofertas X
+    </div>
+    <div class="navbar">
+        <td><a href="#">Zegel Virtual_</a></td>
+        <td><a href="../2/cursos.html">Cursos</a></td>
+        <td><a href="../2/programas.html" style="color: orange;">Programas</a></td>
+        <td><a href="../2/membresia.html">Membresía</a></td>
+        <td><a href="../2/master.html">Master class</a></td>
+        <td><a id="loginBtn">Ingresar</a></td> <!-- Botón para abrir el modal -->
+        <td><a>Informes</a></td>
+    </div>
+    
+    <div class="container">
+        <div class="course-card">
+            <img src="../images/trading.webp" alt="Programa de especialización en TRADING E INVERSIONES FINANCIERAS">
+            <p>📅 3 meses | 5 cursos</p>
+            <h3>Programa de especialización en TRADING E INVERSIONES FINANCIERAS</h3>
+            <p>Aprende sobre el mundo del trading y las inversiones financieras empezando por la gestión de finanzas personales, conceptos básicos y fundamentales sobre el mercado bursátil.</p>
+            <div class="course-details">
+                <span><a href="#">Ver más</a></span>
+                <span><s>S/1,395</s></span>
+                <span style="color: green;"> <b>S/1,185</b></span>
+            </div>
+            <div class="buy-button">
+                🛒 Comprar ahora
+            </div>
+        </div>
+        <div class="course-card">
+            <img src="../images/ofimatica.webp" alt="Programa de especialización en Ofimática">
+            <p>📅 3 meses | 5 cursos</p>
+            <h3>Programa de especialización en Ofimática</h3>
+            <p>Aprende a optimizar, automatizar y mejorar las tareas en entornos laborales utilizando desde cero las diferentes herramientas de Microsoft como: Word, Power Point y Excel.</p>
+            <div class="course-details">
+                <span><a href="#">Ver más</a></span>
+                <br>
+                <span><s>S/1,395</s></span>
+                <span style="color: green;"> <b>S/1,185</b></span>
+            </div>
+            <div class="buy-button">
+                🛒 Comprar ahora
+            </div>
+        </div>
+        
+        <div class="course-card">
+            <img src="../images/recursos_humanos.webp" alt="Programa de especialización en Recursos Humanos">
+            <p>📅 3 meses | 5 cursos</p>
+            <h3>Programa de especialización en Recursos Humanos</h3>
+            <p>Aprende todo lo relacionado a la gestión del talento humano, incluyendo las mejores prácticas para gestionar el clima y la cultura organizacional.</p>
+            <div class="course-details">
+                <span><a href="#">Ver más</a></span>
+                <span><s>S/1,395</s></span>
+                <span style="color: green;"> <b>S/1,185</b></span>
+            </div>
+            <div class="buy-button">
+                🛒 Comprar ahora
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Autor Intelectual: Manuel Stephano Chávez Antón - 2024 Zegel©</p>
+    </footer>
+    <!-- Modal para Login o Registro -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <button class="modal-button">Nuevo Registro</button>
+            <button class="modal-button">Soy Alumno</button>
+        </div>
+    </div>
+   <!-- Modal para Informes -->
+    <div id="informesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeInformesModal">&times;</span>
+            <h2>Inscríbete aquí</h2>
+            <form id="informesForm" class="vertical-form">
+                <label for="estudio">¿Qué quieres estudiar?</label>
+                <select id="estudio" required>
+                    <option value="" disabled selected>¿Qué quieres estudiar?</option>
+                    <option value="cursos">Cursos</option>
+                    <option value="programas">Programas</option>
+                    <option value="membresia">Membresía Anual</option>
+                </select>
+                <input type="text" placeholder="Apellidos" required>
+                <input type="tel" placeholder="Celular" required>
+                <input type="email" placeholder="Email" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Acepto haber leído las <a href="#">políticas de privacidad</a> y los <a href="#">términos y condiciones</a>.</label>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+        <script src="/JavaScript/script1.js"></script> <!-- Vincular el archivo JavaScript -->
+    </body>
+    </html>

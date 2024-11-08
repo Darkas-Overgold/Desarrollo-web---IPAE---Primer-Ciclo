@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membresía</title>
+    <link rel="stylesheet" href="/Css/styles1.css"> <!-- Vincular el archivo CSS -->
+</head>
+<body>
+    <div class="banner">
+        ¡Por tiempo limitado! Nuevos cursos virtuales a S/.79 c/u. Usa el código CURSO79 2d : 02h : 41m : 22s Ver Ofertas X
+    </div>
+    <div class="navbar">
+        <td><a href="#">Zegel Virtual_</a></td>
+        <td><a href="../2/cursos.html">Cursos</a></td>
+        <td><a href="../2/programas.html">Programas</a></td>
+        <td><a href="../2/membresia.html">Membresía</a></td>
+        <td><a href="../2/master.html" style="color: orange;">Master class</a></td>
+        <td><a id="loginBtn">Ingresar</a></td>
+        <td><a id="informesBtn">Informes</a></td>
+    </div>
+    <div class="container">
+        <div class="course-card">
+            <img src="../images/marca.webp" alt="Creando una marca con identidad">
+            <h3>Creando una marca con identidad</h3>
+            <p>Por <b>Claudia Villavicencio</b></p>
+            <div class="course-details">
+                <span><a href="#">Ver más</a></span>
+                <span><s>s/279</s></span>
+                <span style="color: green;"> <b>S/48</b></span>
+            </div>
+            <div class="buy-button">
+                🛒 Comprar ahora
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Autor Intelectual: Manuel Stephano Chávez Antón - 2024 Zegel©</p>
+    </footer>
+    <!-- Modal para Login o Registro -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <button class="modal-button">Nuevo Registro</button>
+            <button class="modal-button">Soy Alumno</button>
+        </div>
+    </div>
+   <!-- Modal para Informes -->
+    <div id="informesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeInformesModal">&times;</span>
+            <h2>Inscríbete aquí</h2>
+            <form id="informesForm" class="vertical-form">
+                <label for="estudio">¿Qué quieres estudiar?</label>
+                <select id="estudio" required>
+                    <option value="" disabled selected>¿Qué quieres estudiar?</option>
+                    <option value="cursos">Cursos</option>
+                    <option value="programas">Programas</option>
+                    <option value="membresia">Membresía Anual</option>
+                </select>
+                <input type="text" placeholder="Apellidos" required>
+                <input type="tel" placeholder="Celular" required>
+                <input type="email" placeholder="Email" required>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Acepto haber leído las <a href="#">políticas de privacidad</a> y los <a href="#">términos y condiciones</a>.</label>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+        <script src="/JavaScript/script1.js"></script> <!-- Vincular el archivo JavaScript -->
+    </body>
+    </html>

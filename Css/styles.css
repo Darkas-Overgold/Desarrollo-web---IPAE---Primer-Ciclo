@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.benefits-section {
+    max-width: 1200px;
+    text-align: center;
+    margin: 20px;
+}
+.benefits-section h2 {
+    color: #ff003c;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.slides {
+    position: relative;
+}
+.benefits-container {
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.benefits-container.active-slide {
+    display: flex;
+}
+.benefit-card {
+    width: 30%;
+    background-color: #44014C;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.benefit-card.pink {
+    background-color: #ff003c;
+}
+.benefit-card .benefit-icon {
+    margin-bottom: 15px;
+}
+.benefit-card img {
+    max-width: 40px;
+    margin-bottom: 10px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pagination .prev, .pagination .next {
+    font-size: 24px;
+    color: #ff003c;
+    cursor: pointer;
+    margin: 0 15px;
+}
+.pagination .page-number {
+    font-size: 18px;
+    color: #333;
+}
+.slides {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slide {
+    display: none;
+    /* Ajustes específicos para las diapositivas */
+}
+.active-slide {
+    display: block;
+    /* Ajustes específicos para la diapositiva activa */
+}
+.pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+.prev, .next {
+    cursor: pointer;
+    font-size: 24px;
+    user-select: none;
+}
+.page-number {
+    font-size: 18px;
+}

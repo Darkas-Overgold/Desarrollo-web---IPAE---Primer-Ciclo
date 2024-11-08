@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>Zegel</title>
+</head>
+<style>
+    .checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        user-select: none;
+    }
+    .checkbox-container {
+        display: flex;  /* Flexbox para alinear horizontalmente */
+        align-items: center;
+        gap: 20px; /* Espacio entre los checkboxes */
+    }
+    .checkbox-group {
+        display: flex; /* Hace que los elementos hijos se alineen en una fila */
+        gap: 20px; /* Añade espacio entre los elementos */
+    }
+    .checkbox-container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #ccc;
+        border-radius: 50%;  /* Hace el checkbox circular */
+    }
+    .checkbox-container input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .checkbox-container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .checkbox-container .checkmark:after {
+        top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;  /* Hace la marca circular */
+        background: white;
+    }
+</style>
+<body style="background-color: rgb(223, 218, 218);">
+    <form action="#" method="get" autocomplete="on">
+        <table border="1">
+            <tr>
+                <td colspan="2">
+                    <h3 style="color: red;">Regìstrate aquì para màs información.</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h4>¿Còmo te gustaría estudiar?</h4>
+                </td>
+            </tr>
+            <tr style="height: 60px;">
+                <td>
+                    <p style="text-align: center; background-color: aqua;">Campus</p>
+                </td>
+                <td style="text-align: center;">
+                    <p>Virtual</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="producto">¿Qué producto te interesa?</label><br>
+                    <input type="text" name="producto" id="producto">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <select name="interes" id="interes">
+                        <option value="0" selected disabled>¿Qué producto te interesa?</option>
+                        <option value="1">Carreras</option>
+                        <option value="2">Diplomados</option>
+                        <option value="3">Cursos</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 60px;">
+                    <label for="carrera">Seleccionar carrera</label>
+                    <select name="interes" id="interes">
+                        <option value="0" selected disabled>¿Qué carrera te gustaría estudiar?</option>
+                        <option value="1">Recursos Humanos</option>
+                        <option value="2">Negocios Internacionales</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 60px;">
+                    <label for="campus">Seleccionar campus</label>
+                    <select name="campus" id="campus">
+                        <option value="0" selected disabled>¿Qué campus te gustaría elegir?</option>
+                        <option value="1">Puruchuco</option>
+                        <option value="2">Puente Piedra</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nombres">Ingrese Nombres</label><br>
+                    <input type="text" id="nombres" name="nombres" placeholder="Benito">
+                </td>
+                <td>
+                    <label for="apellidos">Ingrese Apellidos</label><br>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Camelas">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="celular">Ingrese Celular</label><br>
+                    <input type="text" id="celular" name="Celular" placeholder="+51">
+                </td>
+                <td>
+                    <label for="correo">Ingrese Correo</label><br>
+                    <input type="text" id="correo" name="correo" placeholder="skibidi">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="dni">DNI</label><br>
+                    <input type="text" id="dni" name="dni" placeholder="69">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4 style="color: brown;">¿Cómo nos comunicamos contigo?</h4>
+                    <div class="checkbox-group">
+                        <label class="checkbox-container">WhatsApp
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">Llamada
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">Acepto haber leído las <a href="#">políticas de privacidad</a> y los <a href="#">términos y condiciones</a>.</label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

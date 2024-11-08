@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6d4d4; /* Fondo gris claro */
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #d3d3d3; /* Color de fondo del menú lateral */
+    height: 100vh; /* Para que el menú lateral ocupe toda la altura */
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #d35400; /* Color de texto de los enlaces */
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-right: 10px solid #800080; /* Borde izquierdo de color púrpura */
+    background-color: #ffffff; /* Fondo blanco */
+}
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #e8e8e8; /* Fondo gris claro */ /* Fondo blanco para el contenido */
+}
+.title {
+    color: #d80000; /* Color del título principal */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.collapsible {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.collapsible input {
+    display: none;
+}
+.section-title {
+    display: block;
+    padding: 10px;
+    color: #800080;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    background-color: #e8e8e8; /* Fondo gris claro */
+}
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 10px;
+    border-top: none;
+    background-color: #e8e8e8; /* Fondo gris claro */
+}
+.collapsible input:checked + .section-title + .section-content {
+    max-height: 200px; /* Ajusta el tamaño máximo según el contenido */
+}
+.subtitle {
+    color: #800080; /* Color de subtítulos */
+}
+.description {
+    color: rgb(37, 177, 130); /* Color de la descripción */
+}

@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>Libro de reclamaciones</title>
+    </head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: top;
+        }
+        .header {
+            font-weight: bold;
+        }
+        .note {
+            font-size: 12px;
+            padding: 10px;
+        }
+        .checkbox {
+            margin-top: 15px;
+            padding: 10px;
+        }
+        .submit-button {
+            text-align: center;
+            margin-top: 15px;
+        }
+        input[type="submit"] {
+            background-color: #f08b8b;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .redtext{
+            color:red;
+        }
+    </style>
+    <body style="background-color: gray;">
+        <table border="1">
+            <tr>
+                <td style="text-align: center; background-color: rgb(164, 161, 161);">
+                    <h3 class="redtext">FORMATO DE HOJA DE RECLAMACIÓN</h3>
+                </td>
+            </tr>
+            <td>
+                <p class="redtext">Nro de Reclamación:</p>
+                <p><p class="redtext">Fecha:</p> 6 SEPTIEMBRE 2024</p>
+                <p class="redtext">Sede: </p>
+                    <select name="sede" id="sede">
+                        <option value="0" selected disabled>--SELECCIONE--</option>
+                        <option value="1">ATE - PURUCHUCO</option>
+                        <option value="2">CHICLAYO</option>
+                        <option value="3">CORPORATIVO</option>
+                        <option value="4">ICA</option>
+                        <option value="5">INNOVA TEACHING SCHOOL (ITS)</option>
+                        <option value="6">IQUITOS</option>
+                        <option value="7">LIMA - CENTRO</option>
+                        <option value="8">LIMA - PUEBLO LIBRE</option>
+                        <option value="9">LIMA - SAN JUAN DE LURIGANCHO</option>
+                        <option value="10">LIMA - SURCO</option>
+                        <option value="11">LIMA CENTRO 2</option>
+                        <option value="12">PIURA</option>
+                        <option value="13">SEDE 100% VIRTUAL</option>
+                        <option value="14">SEDE CENTRAL</option>
+                        <option value="15">SEDE VIRTUAL</option>
+                        <option value="16">TRUJILLO</option>
+                    </select>
+                    <p class="redtext">Dirección:</p>
+                    <p class="redtext">Empresa:</p>
+            </td>
+        </table>
+        <br>
+        <table border="1">
+            <tr>
+                <td style="background-color: rgb(164, 161, 161);">
+                    <h2 class="redtext">1. IDENTIFICACIÓN DEL CONSUMIDOR RECLAMANTE</h2>
+                </td>
+            </tr>
+            <td>
+                <label for="nombre" class="redtext">Nombre: </label>
+                    <input type="text" id="apellidos" name="nombre">
+            <p class="redtext">Contacto: </p>
+            <select name="contacto" id="contacto">
+                <option value="0" selected disabled>--SELECCIONE--</option>
+                <option value="1">PG - Público General</option>
+                <option value="2">Alum - Alumno</option>
+                <option value="3">Egr - Egresado</option>
+                <option value="3">Fam - Familiar</option>
+            </select>
+            <label for="domicilio" class="redtext">Domicilio: </label>
+                <input type="text" id="domicilio" name="domicilio">
+            <label for="correo" class="redtext">Correo: </label>
+                <input type="text" id="correo" name="correo">
+            <p class="redtext">Tipo Documento: </p>
+            <select name="documento" id="documento">
+                <option value="0" selected disabled>--SELECCIONE--</option>
+                <option value="1">DNI - D.N.I.</option>
+                <option value="2">L.M. - Libreta Militar</option>
+                <option value="3">C.E. - Carnet de Extranjería</option>
+                <option value="3">ME - Menor de Edad</option>
+            </select>
+            <label for="telefono" class="redtext">Teléfono: </label>
+                <input type="text" id="telefono" name="telefono">
+            </td>
+        </table>
+        <br>
+        <table border="1">
+            <tr>
+                <td style="background-color: rgb(164, 161, 161);">
+                    <h2 class="redtext">2. IDENTIFICACIÓN DEL BIEN CONTRATADO</h2>
+                </td>
+            </tr>
+            <td>
+            <p class="redtext">Clasificación: </p>
+            <select name="clasificacion" id="clasificacion">
+                <option value="0" selected disabled>--SELECCIONE--</option>
+                <option value="1">INF - Infraestructura</option>
+				<option value="2">CVI - Campus Virtual</option>
+				<option value="3">PEN - Pensiones</option>
+				<option value="4">SAC - Secretar&#237;a Acad&#233;mica</option>
+				<option value="5">PMA - Proceso de Matr&#237;cula</option>
+				<option value="6">VEN - Ventas</option>
+				<option value="7">OTR - Otros</option>
+            </select>
+            <p class="redtext">Tipo de Bien: </p>
+            <select name="bien" id="bien">
+                <option value="0" selected disabled>--SELECCIONE--</option>
+                <option value="1">B - Bien.</option>
+                <option value="2">S - Servicio</option>
+            </select>
+            <label for="monto" class="redtext">Monto Reclamado: </label>
+                <input type="text" id="monto" name="monto">
+                <br>
+            <label for="descripcion" class="redtext">Descripción / Asunto: </label>
+                <input type="descripcion" id="descripcion" name="descripcion">
+            </td>
+        </table>
+        <br>
+        <table border="1">
+            <tr>
+                <td style="background-color: rgb(164, 161, 161);">
+                    <h2 class="redtext">3. DETALLE DE RECLAMACIÓN Y PEDIDO DEL CONSUMIDOR</h2>
+                </td>
+            </tr>
+            <td>
+            <p class="redtext">Tipo de Reclamación: </p>
+            <select name="reclamacion" id="reclamacion">
+                <option value="0" selected disabled>--SELECCIONE--</option>
+                <option value="1">Q - Queja</option>
+                <option value="2">R - Reclamo</option>
+            </select>
+            <p>Caracteres restantes: 800</p>
+            <p class="redtext">Detalle: </p>
+            <textarea name="detalle" id="" cols="50" rows="10"></textarea>
+            <p>Caracteres restantes: 800</p>
+            <p class="redtext">Pedido: (Explicar de forma concreta lo que solicita) </p>
+            <textarea name="detalle" id="" cols="50" rows="10"></textarea>
+            </td>
+        </table>
+        <br>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td class="header">Reclamo:</td>
+                    <td>Disconformidad relacionada a los productos o servicios.</td>
+                    <td class="header">Queja:</td>
+                    <td>Disconformidad no relacionada a los productos o servicios; o, malestar o descontento respecto a la atención al público.</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Destinatario: consumidor o proveedor o INDECOPI según corresponda</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="note">
+                        * La formulación de reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.<br>
+                        * El proveedor deberá dar respuesta al reclamo en un plazo no mayor a quince (15) días hábiles improrrogables.
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="checkbox">
+                        <input type="checkbox" id="privacidad" name="privacidad">
+                        <label for="privacidad">He leído y aceptado las <a href="#">Políticas de Privacidad</a>.</label>
+                    </td>
+                </tr>
+            </table>
+            <div class="submit-button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </body>
+</html>

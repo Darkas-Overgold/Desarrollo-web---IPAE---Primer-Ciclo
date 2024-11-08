@@ -1,0 +1,54 @@
+ul{
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(184, 54, 54);
+    position: sticky;
+    top:0;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    color: rgb(3, 3, 19);
+    padding: 8px;
+    text-decoration: none;
+}
+.content{
+    padding-left: 200px;
+}
+a:hover{
+    background-color: blue;
+    color: white;
+}
+.activa{
+    background-color: rgb(217, 217, 25);
+    color: white;
+}
+.title {
+    color: #d80000; /* Color del título principal */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.subtitle {
+    color: #800080; /* Color de subtítulos */
+}
+.description {
+    color: rgb(37, 177, 130); /* Color de la descripción */
+}
+.description::selection{
+    background: yellow;
+    color: red;
+}
+.description:hover{
+    opacity: 0.6;
+}
+.logo:hover{
+    opacity: 0.5;
+}

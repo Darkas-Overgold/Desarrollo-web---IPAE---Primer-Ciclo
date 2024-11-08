@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zegel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Css/styles_intro.css">
+</head>
+<body style="background-color: white;">
+    <div class="container mt-5">
+        <!-- Formulario -->
+        <form action="#" method="get" autocomplete="on">
+            <div class="card p-4">
+                <h3 class="text-danger text-center">Regístrate aquí para más información.</h3>
+                <h4 class="mt-3">¿Cómo te gustaría estudiar?</h4>
+                <div class="columns-2">
+                    <button type="button" class="btn btn-secondary">Campus</button>
+                    <button type="button" class="btn btn-secondary">Virtual</button>
+                </div>
+                <div class="mb-3">
+                    <label for="producto" class="form-label">¿Qué producto te interesa?</label>
+                    <input type="text" class="form-control" name="producto" id="producto" placeholder="Ingresa un producto">
+                </div>
+                <div class="mb-3">
+                    <label for="interes" class="form-label">Selecciona un producto</label>
+                    <select class="form-select" name="interes" id="interes">
+                        <option value="0" selected disabled>¿Qué producto te interesa?</option>
+                        <option value="1">Carreras</option>
+                        <option value="2">Diplomados</option>
+                        <option value="3">Cursos</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="carrera" class="form-label">Selecciona una carrera</label>
+                    <select class="form-select" name="interes" id="carrera">
+                        <option value="0" selected disabled>¿Qué carrera te gustaría estudiar?</option>
+                        <option value="1">Recursos Humanos</option>
+                        <option value="2">Negocios Internacionales</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="campus" class="form-label">Selecciona un campus</label>
+                    <select class="form-select" name="campus" id="campus">
+                        <option value="0" selected disabled>¿Qué campus te gustaría elegir?</option>
+                        <option value="1">Puruchuco</option>
+                        <option value="2">Puente Piedra</option>
+                    </select>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombres" class="form-label">Ingrese Nombres</label>
+                        <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Benito">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellidos" class="form-label">Ingrese Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Camelas">
+                    </div>
+                </div>
+                <div class="row g-3 mt-3">
+                    <div class="col-md-6">
+                        <label for="celular" class="form-label">Ingrese Celular</label>
+                        <input type="text" class="form-control" id="celular" name="celular" placeholder="+51">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">Ingrese Correo</label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="skibidi@example.com">
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <label for="dni" class="form-label">DNI</label>
+                    <input type="text" class="form-control" id="dni" name="dni" placeholder="69">
+                </div>
+                <div class="card p-4">
+                    <h4 class="mt-4 text-brown">¿Cómo nos comunicamos contigo?</h4>
+                    <div class="checkbox-group">
+                        <label class="checkbox-container">
+                            WhatsApp
+                            <input type="checkbox" id="whatsapp">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">
+                            Llamada
+                            <input type="checkbox" id="llamada">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label class="form-check-label" for="terms">
+                            Acepto haber leído las <a href="#">políticas de privacidad</a> y los <a href="#">términos y condiciones</a>.
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Beneficios -->
+        <div class="benefits-section my-5">
+            <h2 class="text-center">Beneficios</h2>
+            <div id="benefitsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/slide1.png" class="d-block w-100" alt="Beneficio 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/slide2.png" class="d-block w-100" alt="Beneficio 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#benefitsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carreras -->
+        <section class="my-5">
+            <h1 class="text-center">Nuestras carreras 🤓</h1>
+            <hr>
+    <div class="container mt-5">
+        <table class="table table-bordered">
+            <tr>
+                <td class="text-center">
+                    <h3>Contabilidad</h3>
+                    <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/contabilidad" target="_blank">Ver carreras</a>
+                </td>
+                <td class="text-center">
+                    <img src="../images/contabilidad.png" alt="zegel" class="img-fluid" width="100">
+                </td>
+                <td class="text-center">
+                    <h3>Logística</h3>
+                    <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/logistica" target="_blank">Ver carreras</a>
+                </td>
+                <td class="text-center">
+                    <img src="../images/logistica.png" alt="zegel" class="img-fluid" width="100">
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">
+                    <h3>Marketing</h3>
+                    <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/marketing" target="_blank">Ver carreras</a>
+                </td>
+                <td class="text-center">
+                    <img src="../images/marketing.png" alt="zegel" class="img-fluid" width="100">
+                </td>
+                <td class="text-center">
+                    <h3>Negocios internacionales</h3>
+                    <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/negocios-internacionales" target="_blank">Ver carreras</a>
+                </td>
+                <td class="text-center">
+                    <img src="../images/negocios_internacionales.png" alt="zegel" class="img-fluid" width="100">
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center">
+                    <h3>Recursos humanos</h3>
+                    <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/recursos-humanos" target="_blank">Ver carreras</a>
+                </td>
+                <td class="text-center">
+                    <img src="../images/recursos_humanos.png" alt="zegel" class="img-fluid" width="100">
+                </td>
+            </tr>
+        </table>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Facultad de negocios.</li>
+                    <li class="list-group-item"><mark>Facultad de comunicaciones.</mark></li>
+                    <li class="list-group-item">Facultad de tecnología.</li>
+                    <li class="list-group-item">Formación Dual.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="text-center">
+                            <h3>Diseño gráfico</h3>
+                            <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/diseno-grafico" target="_blank">Ver carreras</a>
+                        </td>
+                        <td class="text-center">
+                            <img src="../images/diseño_grafico.png" alt="zegel" class="img-fluid" width="100">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Facultad de negocios.</li>
+                    <li class="list-group-item">Facultad de comunicaciones.</li>
+                    <li class="list-group-item"><mark>Facultad de tecnología.</mark></li>
+                    <li class="list-group-item">Formación Dual.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="text-center">
+                            <h3>Computación e informática</h3>
+                            <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/computacion-e-informatica" target="_blank">Ver carreras</a>
+                        </td>
+                        <td class="text-center">
+                            <img src="../images/computacion_e_informatica.png" alt="zegel" class="img-fluid" width="100">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Facultad de negocios.</li>
+                    <li class="list-group-item">Facultad de comunicaciones.</li>
+                    <li class="list-group-item">Facultad de tecnología.</li>
+                    <li class="list-group-item"><mark>Formación Dual.</mark></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <tr>
+                        <td class="text-center">
+                            <h3>Técnico en farmacia</h3>
+                            <a class="btn btn-primary" href="https://www.zegel.edu.pe/carreras/tecnico-en-farmacia" target="_blank">Ver carreras</a>
+                        </td>
+                        <td class="text-center">
+                            <img src="../images/tecnico_en_farmacia.png" alt="zegel" class="img-fluid" width="100">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <h1 class="text-center my-4">¿Qué más te ofrecemos?</h1>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3>Diplomados</h3>
+                    <p>Programa presencial que brinda al ejecutivo un enfoque especializado en un tema específico para desarrollar habilidades y conocimientos en poco tiempo.</p>
+                    <img src="../images/zegel.png" alt="zegel" class="img-fluid" width="50">
+                    <a href="https://www.zegel.edu.pe/diplomados" class="btn btn-primary mt-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3>Cursos</h3>
+                    <p>Cursos Cortos brindan un enfoque práctico y de rápido aprendizaje para que desarrolles nuevas habilidades que te ayudarán en el campo laboral.</p>
+                    <img src="../images/zegel.png" alt="zegel" class="img-fluid" width="50">
+                    <a href="https://www.zegel.edu.pe/cursos" class="btn btn-primary mt-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3>Zegel virtual</h3>
+                    <p>Programa presencial que brinda al ejecutivo un enfoque especializado en un tema específico para desarrollar habilidades y conocimientos en poco tiempo.</p>
+                    <img src="../images/zegel.png" alt="zegel" class="img-fluid" width="50">
+                    <a href="https://www.zegelvirtual.com/" class="btn btn-primary mt-2">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-center my-4">Campus</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="../images/peru.png" alt="Mapa de Perú" class="img-fluid mb-3" width="300">
+        </div>
+        <div class="col-md-8">
+            <h1 class="text-center">Lima Metropolitana</h1>
+            <div class="row my-4">
+                <div class="col-md-6 text-center">
+                    <img src="../images/lima_sur.png" alt="Lima Sur" class="img-fluid" width="100">
+                    <p>Lima sur<br>Pedro Miota 852 SJM</p>
+                    <a href="https://www.zegel.edu.pe/campus/lima-sur">
+                        <img src="../images/arrow_icon.png" alt="Arrow Icon" class="img-fluid" width="50">
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="../images/lima_norte.png" alt="Lima Norte" class="img-fluid" width="100">
+                    <p>Lima norte<br>Av del pacífico 471 Independencia</p>
+                    <a href="https://www.zegel.edu.pe/campus/lima-norte">
+                        <img src="../images/arrow_icon.png" alt="Arrow Icon" class="img-fluid" width="50">
+                    </a>
+                </div>
+            </div>
+            <h1 class="text-center">Regiones</h1>
+            <div class="row my-4">
+                <div class="col-md-6 text-center">
+                    <img src="../images/cusco.png" alt="Cusco" class="img-fluid" width="100">
+                    <p>Cusco<br>Real Plaza, ingreso por la cultura</p>
+                    <a href="https://www.zegel.edu.pe/campus/cusco">
+                        <img src="../images/arrow_icon.png" alt="Arrow Icon" class="img-fluid" width="50">
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="../images/trujillo.png" alt="Trujillo" class="img-fluid" width="100">
+                    <p>Trujillo<br>Av César Vallejo Oeste 1345 CC Real Plaza</p>
+                    <a href="https://www.zegel.edu.pe/campus/trujillo">
+                        <img src="../images/arrow_icon.png" alt="Arrow Icon" class="img-fluid" width="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-center my-4">Testimonios</h1>
+<div class="text-center">
+    <img src="../images/Carla1.png" alt="Carla" class="img-fluid mb-3" width="600">
+    <img src="../images/Carla2.png" alt="Carla" class="img-fluid mb-2" width="50">
+    <h3>Carla Celiz</h3>   
+    <h3>Egresada Zegel</h3>
+    <p>Hoy gracias al apoyo de Zegel estoy iniciando mis estudios de maestría de administración de negocios con especialización en Supply Chain Management en Centrum de la PUPC.</p>
+</div>
+<h1 class="text-center my-4">Blog</h1>
+<div class="text-center">
+    <img src="../images/ventajas.png" alt="Ventajas" class="img-fluid" width="300">
+    <h2>Negocios</h2>
+    <p>8 ventajas de estudiar negocios internacionales</p>
+    <a href="https://www.zegel.edu.pe/blog/negocios/8-ventajas-de-estudiar-negocios-internacionales" class="btn btn-primary mt-2">Ver más</a>
+</div>
+<h1 class="text-center my-4">Eventos</h1>
+<div class="text-center">
+    <img src="../images/milena.png" alt="Milena" class="img-fluid" width="200">
+    <h2>Campus SJL</h2>
+    <p>Zegel Fest</p>          
+    <p>6:00 pm  10/04/2024</p>   
+    <a href="https://www.zegel.edu.pe/eventos/zegel-fest" class="btn btn-primary mt-2">Ver más</a>
+</div>
+<div class="container text-center my-4">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="https://www.zegel.edu.pe/terminos-y-condiciones" class="d-block mb-2">Términos y Condiciones</a>
+            <a href="https://www.zegel.edu.pe/politicas-de-privacidad" class="d-block mb-2">Políticas de Privacidad</a>
+            <a href="https://www.zegel.edu.pe/portal-de-transparencia" class="d-block mb-2">Portal de Transparencia</a>
+            <a href="https://www.zegel.edu.pe/" class="d-block mb-2">Sitemap</a>
+        </div>
+        <div class="col-md-4">
+            <a href="https://www.zegel.edu.pe/politica-de-cookies" class="d-block mb-2">Política de Cookies</a>
+            <a href="https://www.zegel.edu.pe/sites/default/files/documentos/canalesdepagos.pdf" class="d-block mb-2">Medio de Pago</a>
+        </div>
+        <div class="col-md-4">
+            <a href="../2/libro.html" class="d-block mb-2">📕 Libro de Reclamaciones</a>
+        </div>
+    </div>
+</div>
+        <footer class="text-center mt-5">
+            <p>Autor Intelectual: Manuel Stephano Chávez Antón 2024 Zegel ©</p>
+        </footer>
+    </div>
+    <script src="/JavaScript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
